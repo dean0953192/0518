@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>版型初步01</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/earlyaccess/notoserifkhmer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!--link rel="stylesheet"(連結外部屬性表)->
+    <style>
+        /*萬用選取器*/
+        
+        * {
+            box-sizing: border-box;
+            font-family: "Oswald", "Noto Sans TC";
+        }
+        /*Reset CSS 重製CSS網頁格式*/
+        
+        html,
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        ul,
+        ol,
+        li {
+            padding: 0;
+            margin: 0;
+        }
+        
+        img {
+            border: 0;
+            width: 100%;
+            vertical-align: top;
+            /*垂直對齊方式*/
+        }
+        
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        /*Reset CSS 結束*/
+        
+        .full-width {
+            width: 100%;
+        }
+        
+        .fixed-width {
+            width: 1000px;
+            margin: auto;
+            /*板塊置中*/
+        }
+        
+        .col-1,
+        .col-2,
+        .col-3,
+        .col-4 {
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        
+        .col-2,
+        .col-3,
+        .col-4 {
+            float: left;
+        }
+        
+        .col-1 {
+            width: 980px;
+        }
+        
+        .col-2 {
+            width: 480px;
+        }
+        
+        .col-3 {
+            width: calc(1000px/3 - 20px);
+        }
+        
+        .col-4 {
+            width: 230px;
+        }
+        
+        nav {
+            height: 50px;
+            background-color: #363636;
+        }
+        
+        nav .logo {
+            float: left;
+            width: 120px;
+            height: 50px;
+            background-color: #ffdf5a;
+        }
+        
+        nav .menu {
+            float: right;
+        }
+        
+        nav li {
+            list-style: none;
+            float: left;
+        }
+        
+        nav .menu a {
+            color: #ebebeb;
+            text-decoration: none;
+            padding-left: 15px;
+            padding-right: 15px;
+            line-height: 50px;
+        }
+        
+        nav .menu a:hover {
+            color: #ffdf5a;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 5px 20px;
+            text-decoration: none;
+            background-color: #6a6a6a;
+            color: #e3e3e3;
+        }
+        .btn:hover {
+            background-color: #aaa;
+            color: #222;
+        }
+
+        
+        .btn-inverse {
+            display: inline-block;
+            padding: 5px 20px;
+            text-decoration: none;
+            background-color: #e3e3e3;
+            color: #6a6a6a;
+        }
+        
+        header {
+            padding-top: 300px;
+            padding-bottom: 300px;
+            background-image: url(images/header.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        header h1 {
+            text-align: center;
+            color: #ffffff;
+        }
+        
+        header p {
+            color: #e8e8e8;
+            text-align: center;
+            letter-spacing: 5px;
+        }
+        
+        #about,
+        #portfolio,
+        #service {
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+        
+        #portfolio {
+            background-color: #c4c4c4;
+        }
+        
+        #portfolio .fixed-width:nth-of-type(1) {
+            margin-bottom: 30px;
+        }
+        
+        #service {
+            text-align: center;
+        }
+        
+        #service p {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .title {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+        
+        footer {
+            background-color: #363636;
+            color: #ebebeb;
+            padding: 20px 0;
+        }
+        
+        footer .sns {
+            text-align: right;
+        }
+        
+        footer .sns a {
+            color: #ebebeb;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+        footer .sns a:hover {
+            color: #ffdf5a;
+        }
+
+        .copyrights {
+            /*font-family: Arial;*/
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="full-width">
+        <div class="fixed-width">
+            <div class="logo"></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">PORTFOLIO</a></li>
+                    <li><a href="#">SERVICE</a></li>
+                    <!--<li><a href="#">BLOG</a></li>-->
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="full-width">
+        <h1>LANCE Design</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </p>
+    </header>
+    <div class="full-width clearfix" id="about">
+        <h2 class="title">About</h2>
+        <div class="fixed-width clearfix">
+            <div class="col-2">
+                <img src="images/about.jpg" alt="about">
+            </div>
+            <div class="col-2">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni sequi facilis totam saepe molestiae, repellendus, itaque natus. Dolorem, explicabo sint ex, harum voluptas ullam. Deserunt sed quis suscipit, vel maiores?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius enim facilis libero illum cumque! Quo tempora eveniet minus modi quaerat, recusandae dolore amet ea eaque esse voluptatem commodi sit et.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius enim facilis libero illum cumque! Quo tempora eveniet minus modi quaerat, recusandae dolore amet ea eaque esse voluptatem commodi sit et.</p>
+                <a href="#" class="btn">more</a>
+            </div>
+        </div>
+    </div>
+    <div class="full-width" id="portfolio">
+        <h2 class="title">Portfolio</h2>
+        <div class="fixed-width clearfix">
+            <div class="col-3">
+                <img src="images/001.jpg" alt="">
+            </div>
+            <div class="col-3">
+                <img src="images/002.jpg" alt="">
+            </div>
+            <div class="col-3">
+                <img src="images/about.jpg" alt="">
+            </div>
+        </div>
+        <div class="fixed-width clearfix">
+            <div class="col-3">
+                <img src="images/003.jpg" alt="">
+            </div>
+            <div class="col-3">
+                <img src="images/004.jpg" alt="">
+            </div>
+            <div class="col-3">
+                <img src="images/005.jpg" alt="">
+            </div>
+
+        </div>
+    </div>
+    <div class="full-width" id="service">
+        <h2 class="title">Service</h2>
+        <div class="fixed-width clearfix">
+            <div class="col-4">
+                <div><i class="fa fa-subway fa-5x"></i></div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe libero, enim soluta maxime molestias doloremque voluptatibus?
+                </p>
+                <a href="#" class="btn">more</a>
+            </div>
+            <div class="col-4">
+                <div><i class="fa fa-envelope-open fa-5x"></i></div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe libero, enim soluta maxime molestias doloremque voluptatibus?
+                </p>
+                <a href="#" class="btn">more</a>
+            </div>
+            <div class="col-4">
+                <div><i class="fa fa-map fa-5x"></i></div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe libero, enim soluta maxime molestias doloremque voluptatibus?
+                </p>
+                <a href="#" class="btn">more</a>
+            </div>
+            <div class="col-4">
+                <div><i class="fa fa-cogs fa-5x"></i></div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe libero, enim soluta maxime molestias doloremque voluptatibus?
+                </p>
+                <a href="#" class="btn">more</a>
+            </div>
+        </div>
+    </div>
+    <footer class="full-width">
+        <div class="fixed-width clearfix">
+            <div class="col-2">
+                <div class="copyrights">
+                    2017 &copy; All Rights Reserved.Design By Lance W.J.D.
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="sns">
+                    <a href="#" class="fa fa-facebook fa-lg"></a>
+                    <a href="#" class="fa fa-instagram fa-lg"></a>
+                    <a href="#" class="fa fa-envelope fa-lg"></a>
+                    <a href="#" class="fa fa-twitter fa-lg"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
